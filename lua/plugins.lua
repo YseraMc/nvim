@@ -1,5 +1,3 @@
-vim.cmd.packadd("packer.nvim")
-
 require("packer").startup(function(use)
 	use("wbthomason/packer.nvim")
 	use("nvim-telescope/telescope.nvim")
@@ -20,6 +18,7 @@ require("packer").startup(function(use)
 	use("windwp/nvim-autopairs")
 	use("numToStr/Comment.nvim")
 	use("phaazon/hop.nvim")
+	use("akinsho/toggleterm.nvim")
 end)
 
 -- Packerオートコンパイル
@@ -32,6 +31,9 @@ require("nvim-autopairs").setup({})
 require("Comment").setup({})
 require("hop").setup({})
 require("telescope").load_extension("file_browser")
+require("toggleterm").setup{
+	open_mapping = [[<c-\>]],
+}
 
 require("mason").setup()
 require("mason-lspconfig").setup()
