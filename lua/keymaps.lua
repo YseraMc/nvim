@@ -41,3 +41,7 @@ vim.keymap.set("n", "<leader>h", ":HopChar1<CR>", { noremap = true })
 vim.keymap.set("n", "<leader>l", ":HopLine<CR>", { noremap = true })
 
 
+-- markdown
+vim.keymap.set("n", "<leader>mp", ":MarkdownPreview<CR>", { noremap = true })
+vim.keymap.set("n", "<leader>mps", ":MarkdownPreviewStop<CR>", { noremap = true })
+

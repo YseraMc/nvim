@@ -19,7 +19,11 @@ require("packer").startup(function(use)
 	use("numToStr/Comment.nvim")
 	use("phaazon/hop.nvim")
 	use("akinsho/toggleterm.nvim")
-end)
+use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+})
+	end)
 
 -- Packerオートコンパイル
 vim.api.nvim_create_autocmd("BufWritePost", {
@@ -77,3 +81,4 @@ cmp.setup.cmdline(":", {
 	mapping = cmp.mapping.preset.cmdline(),
 	sources = cmp_cmdline_sources,
 })
+

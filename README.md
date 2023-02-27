@@ -14,7 +14,7 @@ execute `:PackerInstall` in Neovim cmdline.
 
 Install [stylua](https://github.com/JohnnyMorganz/StyLua).
 
-If you have not Rust, you need to install Rust.
+If you have not Rust, you need to install it.
 ```bash
 asdf plugin add rust
 asdf install rust latest
