@@ -37,7 +37,9 @@ require("nvim-autopairs").setup({})
 require("Comment").setup({})
 require("hop").setup({})
 require("telescope").load_extension("file_browser")
-require("toggleterm").setup({})
+require("toggleterm").setup({
+	terminal_mappings = true,
+})
 
 require("mason").setup()
 require("mason-lspconfig").setup()
