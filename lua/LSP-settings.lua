@@ -3,7 +3,7 @@
 --
 
 local lsp = require("lspconfig")
--- lsp.pyright.setup({})
+lsp.pyright.setup({})
 lsp.tsserver.setup({})
 lsp.lua_ls.setup({
 	settings = {
