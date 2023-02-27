@@ -19,11 +19,13 @@ require("packer").startup(function(use)
 	use("numToStr/Comment.nvim")
 	use("phaazon/hop.nvim")
 	use("akinsho/toggleterm.nvim")
-use({
-    "iamcco/markdown-preview.nvim",
-    run = function() vim.fn["mkdp#util#install"]() end,
-})
-	end)
+	use({
+		"iamcco/markdown-preview.nvim",
+		run = function()
+			vim.fn["mkdp#util#install"]()
+		end,
+	})
+end)
 
 -- Packerオートコンパイル
 vim.api.nvim_create_autocmd("BufWritePost", {
@@ -35,9 +37,7 @@ require("nvim-autopairs").setup({})
 require("Comment").setup({})
 require("hop").setup({})
 require("telescope").load_extension("file_browser")
-require("toggleterm").setup{
-	open_mapping = [[<c-\>]],
-}
+require("toggleterm").setup({})
 
 require("mason").setup()
 require("mason-lspconfig").setup()
@@ -81,4 +81,3 @@ cmp.setup.cmdline(":", {
 	mapping = cmp.mapping.preset.cmdline(),
 	sources = cmp_cmdline_sources,
 })
-

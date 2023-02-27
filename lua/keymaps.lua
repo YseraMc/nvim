@@ -34,6 +34,7 @@ vim.keymap.set("n", "<C-p>", ":bprev<CR>", { noremap = true })
 vim.keymap.set("n", "<leader>w", ":Format<CR>:update<CR>:bd<CR>", { noremap = true })
 
 -- Term
+vim.keymap.set("n", "<C-\\>", ":ToggleTerm direction=float<CR>", { noremap = true })
 
 -- LSP
 
@@ -44,4 +45,3 @@ vim.keymap.set("n", "<leader>l", ":HopLine<CR>", { noremap = true })
 -- markdown
 vim.keymap.set("n", "<leader>mp", ":MarkdownPreview<CR>", { noremap = true })
 vim.keymap.set("n", "<leader>mps", ":MarkdownPreviewStop<CR>", { noremap = true })
-
