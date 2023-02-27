@@ -13,8 +13,9 @@ vim.keymap.set("n", ";", ":", { noremap = true })
 vim.keymap.set("n", "x", '"_x', { noremap = true })
 vim.keymap.set("n", "<Esc><Esc>", ":nohlsearch<CR>", { noremap = true })
 
--- フォーマットして保存
-vim.keymap.set("n", "<C-s>", ":FormatWrite<CR>", { noremap = true })
+-- フォーマット
+vim.keymap.set("n", "<leader>f", ":Format<CR>", { noremap = true })
+vim.keymap.set("n", "<leader>F", ":FormatWrite<CR>", { noremap = true })
 
 -- dict
 vim.keymap.set("n", "<leader>dc", ":tabnew ~/.config/cspell/cspell.json<CR>")
@@ -39,7 +40,6 @@ vim.keymap.set("n", "<leader>w", ":Format<CR>:update<CR>:bd<CR>", { noremap = tr
 -- hop
 vim.keymap.set("n", "<leader>h", ":HopChar1<CR>", { noremap = true })
 vim.keymap.set("n", "<leader>l", ":HopLine<CR>", { noremap = true })
-
 
 -- markdown
 vim.keymap.set("n", "<leader>mp", ":MarkdownPreview<CR>", { noremap = true })
