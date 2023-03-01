@@ -1,7 +1,3 @@
---
--- Formatter core settings
---
-
 local util = require("formatter.util")
 
 local lua = {
