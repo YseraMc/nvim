@@ -28,3 +28,9 @@ require("formatter").setup({
 		["*"] = any,
 	},
 })
+
+--
+vim.cmd("augroup FormatAutogroup")
+vim.cmd("autocmd!")
+vim.cmd("autocmd BufWritePost * FormatWrite")
+vim.cmd("augroup END")
