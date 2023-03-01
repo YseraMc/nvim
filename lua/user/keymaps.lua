@@ -13,10 +13,6 @@ vim.keymap.set("n", ";", ":", { noremap = true })
 vim.keymap.set("n", "x", '"_x', { noremap = true })
 vim.keymap.set("n", "<Esc><Esc>", ":nohlsearch<CR>", { noremap = true })
 
--- フォーマット
-vim.keymap.set("n", "<leader>f", ":Format<CR>", { noremap = true })
-vim.keymap.set("n", "<leader>F", ":FormatWrite<CR>", { noremap = true })
-
 -- dict
 vim.keymap.set("n", "<leader>dc", ":tabnew ~/.config/cspell/cspell.json<CR>")
 
