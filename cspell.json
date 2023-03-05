@@ -8,7 +8,15 @@
         "streetsidesoftware",
         "vsmarketplacebadge",
         "visualstudio",
-		"keymaps"
+		"keymaps",
+		"masson",
+		"mapleader",
+		"keymap",
+		"noremap",
+		"bnext",
+		"bprev",
+		"Neovim",
+		"nvim"
     ],
     "flagWords": [
         "hte"
