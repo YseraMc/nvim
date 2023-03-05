@@ -25,6 +25,7 @@ require("packer").startup(function(use)
 			vim.fn["mkdp#util#install"]()
 		end,
 	})
+	use('Yagua/nebulous.nvim')
 end)
 
 -- Packerオートコンパイル
@@ -40,5 +41,4 @@ require("telescope").load_extension("file_browser")
 require("toggleterm").setup({
 	terminal_mappings = true,
 })
-
 
