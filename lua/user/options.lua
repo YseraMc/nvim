@@ -6,13 +6,13 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 
 -- マウス操作
-vim.opt.mouse = 'a'
+vim.opt.mouse = "a"
 
 -- タイトル表示
 vim.opt.title = true
 
 -- help言語
-vim.opt.helplang = 'ja'
+vim.opt.helplang = "ja"
 
 -- -エラー時の音を画面表示に
 vim.opt.visualbell = true
@@ -25,7 +25,7 @@ vim.opt.matchtime = 1
 vim.opt.showtabline = 2
 
 -- クリップボード連携
-vim.opt.clipboard:append{'unnamedplus'}
+vim.opt.clipboard:append({ "unnamedplus" })
 
 -- バッファを保存せずに切り替え可
 vim.opt.hidden = true
@@ -38,6 +38,4 @@ vim.opt.smartcase = true
 -- -検索が末尾までいったら先頭から検索
 vim.opt.wrapscan = true
 
-
--- フロートウィンドウのカラースキームを上書きしておく
-vim.cmd[[hi NormalFloat ctermfg=LightGrey]]
+vim.opt.signcolumn = "yes"
