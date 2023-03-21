@@ -26,6 +26,7 @@ require("packer").startup(function(use)
 		end,
 	})
 	use('Yagua/nebulous.nvim')
+	use('machakann/vim-sandwich')
 end)
 
 -- Packerオートコンパイル
