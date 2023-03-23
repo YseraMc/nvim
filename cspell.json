@@ -16,7 +16,9 @@
 		"bnext",
 		"bprev",
 		"Neovim",
-		"nvim"
+		"nvim",
+		"openai",
+		"davinci"
     ],
     "flagWords": [
         "hte"
