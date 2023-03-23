@@ -6,5 +6,6 @@ require("user.lsp")
 require("user.null-ls")
 require("user.formatter")
 require("user.cmp")
+require("user.treesitter")
 require("user.color-theme")
 

@@ -39,3 +39,4 @@ vim.opt.smartcase = true
 vim.opt.wrapscan = true
 
 vim.opt.signcolumn = "yes"
+

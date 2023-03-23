@@ -7,6 +7,10 @@ require("nebulous").setup({
 	-- 	variables = false,
 	-- },
 	custom_colors = {
-		Comment = { fg = "#ff1493" },
+		-- Comment = { fg = "#ff1493" },
 	},
 })
+
+
+-- treesitterのハイライトを上書き
+vim.cmd('hi @comment guifg=#f1493')
