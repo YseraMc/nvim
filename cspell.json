@@ -18,7 +18,11 @@
 		"Neovim",
 		"nvim",
 		"openai",
-		"davinci"
+		"davinci",
+		"isort ",
+		"autoflake ",
+		"mypy ",
+		"xmeg"
     ],
     "flagWords": [
         "hte"

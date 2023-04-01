@@ -11,6 +11,5 @@ require("nebulous").setup({
 	},
 })
 
-
 -- treesitterのハイライトを上書き
-vim.cmd('hi @comment guifg=#f1493')
+vim.cmd("hi @comment guifg=#ff1493")
