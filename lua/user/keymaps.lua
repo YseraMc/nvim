@@ -17,17 +17,19 @@ vim.keymap.set("n", "<Esc><Esc>", ":nohlsearch<CR>", { noremap = true })
 vim.keymap.set("n", "<leader>dc", ":tabnew ~/.config/cspell/cspell.json<CR>")
 
 -- ファイラー
-vim.keymap.set("n", "<leader>b", ":Telescope file_browser<CR>", { noremap = true })
+-- vim.keymap.set("n", "<leader>b", ":Telescope file_browser<CR>", { noremap = true })
+
+-- grep
+vim.keymap.set("n", "<leader>g", ":Telescope live_grep<CR>", { noremap = true })
 
 -- fzf
 vim.keymap.set("n", "<leader>f", ":Telescope find_files<CR>", { noremap = true })
 
--- バッファ切り替え
-vim.keymap.set("n", "<C-n>", ":bnext<CR>", { noremap = true })
-vim.keymap.set("n", "<C-p>", ":bprev<CR>", { noremap = true })
+-- quickfix
+vim.keymap.set("n", "tq", ":Telescope quickfix<CR>", { noremap = true })
 
--- バッファを保存して閉じる
-vim.keymap.set("n", "<leader>w", ":Format<CR>:update<CR>:bd<CR>", { noremap = true })
+-- バッファ
+vim.keymap.set("n", "<leader>b", ":Telescope buffers<CR>", { noremap = true })
 
 -- Term
 vim.keymap.set("n", "<C-\\>", ":ToggleTerm direction=float<CR>", { noremap = true })

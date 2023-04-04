@@ -4,16 +4,24 @@ local cmp_sources = {
 	{ name = "buffer" },
 	{ name = "path" },
 	{ name = "cmdline" },
-	-- { name = "snippy" },
+	{ name = "snippy" },
 }
 local cmp_mappings = {
-	["<S-Tab>"] = cmp.mapping.select_prev_item(),
-	["<Tab>"] = cmp.mapping.select_next_item(),
-	["<C-l>"] = cmp.mapping.complete(),
+	["<C-p>"] = cmp.mapping.select_prev_item(),
+	["<C-n>"] = cmp.mapping.select_next_item(),
+	["<C-Space>"] = cmp.mapping.complete(),
+	["<C-e>"] = cmp.mapping.abort(),
+	["<CR>"] = cmp.mapping.confirm({ select = false }),
+}
+local cmp_snippet = {
+	expand = function(args)
+		require("snippy").expand_snippet(args.body) -- For `snippy` users.
+	end,
 }
 cmp.setup({
 	sources = cmp_sources,
 	mapping = cmp_mappings,
+	snippet = cmp_snippet,
 })
 
 local cmp_cmdline_sources = {
