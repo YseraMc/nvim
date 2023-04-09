@@ -22,7 +22,8 @@
 		"isort ",
 		"autoflake ",
 		"mypy ",
-		"xmeg"
+		"xmeg",
+		"ehon"
     ],
     "flagWords": [
         "hte"
