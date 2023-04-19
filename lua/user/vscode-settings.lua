@@ -21,6 +21,8 @@ vim.keymap.set("n", "<C-t>", "<Cmd>call VSCodeNotify('workbench.action.terminal.
 vim.keymap.set("n", "gh", "<Cmd>call VSCodeNotify('editor.action.showHover')<CR>")
 vim.keymap.set("n", "gd", "<Cmd>call VSCodeNotify('editor.action.goToDeclaration')<CR>")
 
+vim.keymap.set("n", "<leader>c", "<Cmd>call VSCodeNotify('workbench.action.showCommands')<CR>")
+
 --
 -- plugin
 --

@@ -40,7 +40,7 @@ cargo install stylua
         "when":""
     },
     {
-        "key": "v b",
+        "key": "Ctrl+K b",
         "command": "workbench.action.navigateBack",
         "when": "neovim.mode == normal && editorTextFocus",
     },
