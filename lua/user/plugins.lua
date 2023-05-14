@@ -30,6 +30,7 @@ require("packer").startup(function(use)
 	use("Yagua/nebulous.nvim")
 	use("machakann/vim-sandwich")
 	use("nvim-treesitter/nvim-treesitter")
+	use("h-hg/fcitx.nvim")
 end)
 
 -- Packerオートコンパイル

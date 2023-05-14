@@ -33,6 +33,7 @@ require("packer").startup(function(use)
 	use("numToStr/Comment.nvim")
 	use("phaazon/hop.nvim")
 	use("machakann/vim-sandwich")
+	use("h-hg/fcitx.nvim")
 end)
 
 -- Packerオートコンパイル
