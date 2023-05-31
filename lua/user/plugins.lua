@@ -19,17 +19,10 @@ require("packer").startup(function(use)
 	use("j-hui/fidget.nvim")
 	use("windwp/nvim-autopairs")
 	use("numToStr/Comment.nvim")
-	use("akinsho/toggleterm.nvim")
-	use({
-		"iamcco/markdown-preview.nvim",
-		run = function()
-			vim.fn["mkdp#util#install"]()
-		end,
-	})
-	use("Yagua/nebulous.nvim")
 	use("machakann/vim-sandwich")
 	use("nvim-treesitter/nvim-treesitter")
 	use("h-hg/fcitx.nvim")
+	use("rebelot/kanagawa.nvim")
 end)
 
 -- Packerオートコンパイル
@@ -41,6 +34,3 @@ vim.api.nvim_create_autocmd("BufWritePost", {
 require("nvim-autopairs").setup({})
 require("Comment").setup({})
 require("telescope").load_extension("file_browser")
-require("toggleterm").setup({
-	terminal_mappings = true,
-})
