@@ -19,7 +19,6 @@ require("packer").startup(function(use)
 	use("j-hui/fidget.nvim")
 	use("windwp/nvim-autopairs")
 	use("numToStr/Comment.nvim")
-	use("phaazon/hop.nvim")
 	use("akinsho/toggleterm.nvim")
 	use({
 		"iamcco/markdown-preview.nvim",
@@ -41,7 +40,6 @@ vim.api.nvim_create_autocmd("BufWritePost", {
 
 require("nvim-autopairs").setup({})
 require("Comment").setup({})
-require("hop").setup({})
 require("telescope").load_extension("file_browser")
 require("toggleterm").setup({
 	terminal_mappings = true,
