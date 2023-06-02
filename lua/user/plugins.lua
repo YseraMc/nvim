@@ -23,6 +23,12 @@ require("packer").startup(function(use)
 	use("nvim-treesitter/nvim-treesitter")
 	use("h-hg/fcitx.nvim")
 	use("rebelot/kanagawa.nvim")
+	use({
+		"lewis6991/gitsigns.nvim",
+		config = function()
+			require("gitsigns").setup()
+		end,
+	})
 end)
 
 -- Packerオートコンパイル
