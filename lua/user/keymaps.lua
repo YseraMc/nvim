@@ -17,7 +17,7 @@ vim.keymap.set("n", "<Esc><Esc>", ":nohlsearch<CR>", { noremap = true })
 vim.keymap.set("n", "<leader>dc", ":tabnew ~/.config/cspell/cspell.json<CR>")
 
 -- ファイラー
--- vim.keymap.set("n", "<leader>b", ":Telescope file_browser<CR>", { noremap = true })
+vim.keymap.set("n", "<leader>f", ":Telescope file_browser<CR>", { noremap = true })
 
 -- grep
 vim.keymap.set("n", "<leader>g", ":Telescope live_grep<CR>", { noremap = true })
@@ -32,3 +32,6 @@ vim.keymap.set("n", "tq", ":Telescope quickfix<CR>", { noremap = true })
 vim.keymap.set("n", "<leader>b", ":Telescope buffers<CR>", { noremap = true })
 vim.keymap.set("n", "<C-h>", ":bprev<CR>", { noremap = true })
 vim.keymap.set("n", "<C-l>", ":bnext<CR>", { noremap = true })
+
+--zen
+vim.keymap.set("n", "<leader>z", ":ZenMode<CR>", { noremap = true })

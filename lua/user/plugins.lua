@@ -29,6 +29,7 @@ require("packer").startup(function(use)
 			require("gitsigns").setup()
 		end,
 	})
+	use("folke/zen-mode.nvim")
 end)
 
 -- Packerオートコンパイル
