@@ -23,12 +23,7 @@ require("packer").startup(function(use)
 	use("nvim-treesitter/nvim-treesitter")
 	use("h-hg/fcitx.nvim")
 	use("rebelot/kanagawa.nvim")
-	use({
-		"lewis6991/gitsigns.nvim",
-		config = function()
-			require("gitsigns").setup()
-		end,
-	})
+	use("lewis6991/gitsigns.nvim")
 	use("folke/zen-mode.nvim")
 end)
 
@@ -38,6 +33,9 @@ vim.api.nvim_create_autocmd("BufWritePost", {
 	command = "PackerCompile",
 })
 
-require("nvim-autopairs").setup({})
 require("Comment").setup({})
 require("telescope").load_extension("file_browser")
+require("nvim-autopairs").setup({})
+require("gitsigns").setup()
+
+vim.cmd("colorscheme kanagawa")
