@@ -20,12 +20,25 @@ local any = {
 	require("formatter.filetypes.any").remove_trailing_whitespace,
 }
 
+local prettier = {
+	function()
+		return {
+			exe = "prettier",
+			args = {
+				util.escape_path(util.get_current_buffer_file_path()),
+			},
+			stdin = true,
+		}
+	end,
+}
+
 require("formatter").setup({
 	logging = true,
 	log_level = vim.log.levels.WARN,
 	filetype = {
 		lua = lua,
 		["*"] = any,
+		["json"] = prettier,
 	},
 })
 
