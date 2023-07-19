@@ -25,6 +25,7 @@ require("packer").startup(function(use)
 	use("rebelot/kanagawa.nvim")
 	use("lewis6991/gitsigns.nvim")
 	use("folke/zen-mode.nvim")
+	use("ojroques/nvim-osc52")
 end)
 
 -- Packerオートコンパイル
