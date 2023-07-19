@@ -54,12 +54,9 @@ lsp.emmet_ls.setup({
 	},
 })
 
-lsp.pyright.setup({
-	on_attach = on_attach,
-})
-lsp.tsserver.setup({
-	on_attach = on_attach,
-})
+lsp.pyright.setup({ on_attach = on_attach })
+lsp.solargraph.setup({ on_attach = on_attach })
+lsp.tsserver.setup({ on_attach = on_attach })
 lsp.lua_ls.setup({
 	on_attach = on_attach,
 	settings = {
