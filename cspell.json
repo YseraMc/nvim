@@ -23,7 +23,8 @@
 		"autoflake ",
 		"mypy ",
 		"xmeg",
-		"ehon"
+		"ehon",
+		"wezterm"
     ],
     "flagWords": [
         "hte"
